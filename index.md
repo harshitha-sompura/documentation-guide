@@ -1,6 +1,6 @@
-# Developer Guide — 2025–2026
+# Developer Guide 2025-2026
 
-> **Purpose:** Onboarding and reference guide for developers, interns, and replacements joining any active project.
+> Onboarding and reference guide for developers, interns, and replacements joining any active project.
 > Last updated: May 2026
 
 ---
@@ -8,13 +8,12 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Organization 1 — Internal (Accqrate HCM)](#organization-1--internal-accqrate-hcm)
+- [Organization 1 - Internal (Accqrate HCM)](#organization-1---internal-accqrate-hcm)
   - [GitHub Workflow](#github-workflow)
-  - [Team Contacts](#team-contacts--accqrate)
-  - [Tech Stack & Setup](#tech-stack--setup--accqrate)
-  - [Project Structure](#project-structure--accqrate)
-- [Organization 2 — Hight.io](#organization-2--hightio)
-  - [Team Contacts](#team-contacts--hightio)
+  - [Team Contacts](#team-contacts---accqrate)
+  - [Tech Stack & Setup](#tech-stack--setup---accqrate)
+- [Organization 2 - Hight.io](#organization-2---hightio)
+  - [Team Contacts](#team-contacts---hightio)
   - [JDOX Studio (Web)](#jdox-studio-web)
   - [JDOX Folder Scanner App](#jdox-folder-scanner-app)
   - [JDOX Folder Scanner Service](#jdox-folder-scanner-service-windows)
@@ -22,31 +21,21 @@
   - [Oratix.io](#oratixio)
   - [OBOT](#obot)
   - [Hight Components Library](#hight-components-library)
-- [Quick Reference — All Projects](#quick-reference--all-projects)
+- [Quick Reference - All Projects](#quick-reference---all-projects)
 
 ---
 
 ## Overview
 
-This guide covers all active projects across two organizations. Each section contains team contacts, tech stack, local setup, branching strategy, and deployment notes. Use this guide when:
-
-- You are a new intern or developer joining a project
-- You are taking over someone's responsibilities
-- You need a quick reference for environment setup or deployment
+This guide covers all active projects across two organizations. Each section has team contacts, tech stack, local setup, branching strategy, and deployment notes.
 
 ---
 
----
-
-## Organization 1 — Internal (Accqrate HCM)
+## Organization 1 - Internal (Accqrate HCM)
 
 ## Accqrate HCM (Web)
 
-> **What it is:** The internal company platform used to manage HCM (Human Capital Management) workflows — used by HR, Employees, and Managers.
-
-<!-- Screenshot placeholder -->
-> 📷 _Add a screenshot of the Accqrate HCM dashboard here_
-> `![Accqrate HCM Dashboard](./assets/accqrate-dashboard.png)`
+The internal company platform used to manage HCM (Human Capital Management) workflows. Used by HR, Employees, and Managers.
 
 ---
 
@@ -60,13 +49,13 @@ This guide covers all active projects across two organizations. Each section con
 
 **Branching Rules for Interns / Devs:**
 
-1. Create a **personal branch** named after yourself (e.g., `harshitha-feature-xyz`)
+1. Create a personal branch named after yourself (e.g., `harshitha-feature-xyz`)
 2. Build and optionally demo your changes
 3. Get review and merge into `test_stage` (dev environment)
-4. QA → Production follows from there via leads
+4. QA to Production follows from there via leads
 
 ```
-your-name-branch → test_stage (dev) → qa → production
+your-name-branch -> test_stage (dev) -> qa -> production
 ```
 
 **Repos:**
@@ -78,7 +67,7 @@ your-name-branch → test_stage (dev) → qa → production
 
 ---
 
-### Team Contacts — Accqrate
+### Team Contacts - Accqrate
 
 #### Leads
 
@@ -99,7 +88,7 @@ your-name-branch → test_stage (dev) → qa → production
 
 ---
 
-### Tech Stack & Setup — Accqrate
+### Tech Stack & Setup - Accqrate
 
 #### Stack
 
@@ -128,7 +117,7 @@ npm install
 npm start
 ```
 
-> ⚠️ Make sure you have your **local environment variables** configured before running. Ask a lead or support contact for the `.env` values.
+> Make sure you have your local environment variables configured before running. Ask a lead or support contact for the `.env` values.
 
 #### Backend Local Setup
 
@@ -147,39 +136,17 @@ npm install
 npm start  # or npm run dev
 ```
 
-> ⚠️ Set up local MongoDB connection and all required environment variables before starting.
+> Set up local MongoDB connection and all required environment variables before starting.
 
 ---
 
-### Project Structure — Accqrate
+## Organization 2 - Hight.io
 
-<!-- Add folder structure screenshot or expand this section as you explore the codebase -->
-> 📷 _Add a project folder tree screenshot here_
-> `![Project Structure](./assets/accqrate-structure.png)`
-
-> **TODO for maintainer:** Document key folders and files as you navigate the project. Add module descriptions here.
-
-| Area | Notes |
-|---|---|
-| Key Modules | _(To be documented — add as you explore)_ |
-| Important Files | _(To be documented)_ |
-| API Patterns | _(To be documented)_ |
+Hight.io is an external client organization with multiple active products. The team works across web apps, desktop apps, background services, and AI agents.
 
 ---
 
----
-
-## Organization 2 — Hight.io
-
-> **What it is:** Hight.io is an external client organization with multiple active products. The team works across web apps, desktop apps, background services, and AI agents.
-
-<!-- Screenshot placeholder -->
-> 📷 _Add the Hight.io brand/logo or product overview image here_
-> `![Hight.io Overview](./assets/hight-overview.png)`
-
----
-
-### Team Contacts — Hight.io
+### Team Contacts - Hight.io
 
 #### Leadership
 
@@ -190,13 +157,13 @@ npm start  # or npm run dev
 | Glen McCallum | Tech Lead & POC |
 | Kristian | Software Developer |
 
-> 💡 **Tip:** If Jan is unavailable, **Karthik** is your go-to for setting up AWS and Vercel credentials.
+> If Jan is unavailable, Karthik is your go-to for setting up AWS and Vercel credentials.
 
 ---
 
-## Global Standards — Hight.io Projects
+## Global Standards - Hight.io Projects
 
-> These apply across **all** Hight.io projects unless noted otherwise.
+These apply across all Hight.io projects unless noted otherwise.
 
 | Standard | Value |
 |---|---|
@@ -208,11 +175,7 @@ npm start  # or npm run dev
 
 ## JDOX Studio (Web)
 
-> **What it is:** The main JDOX web application for document management and cloud workflows.
-
-<!-- Screenshot placeholder -->
-> 📷 _Add a JDOX Studio screenshot here_
-> `![JDOX Studio](./assets/jdox-studio.png)`
+The main JDOX web application for document management and cloud workflows.
 
 ### Tech Stack
 
@@ -231,16 +194,16 @@ npm start  # or npm run dev
 # Use Node 22
 nvm use 22
 
-# Install dependencies (use yarn — NOT npm)
+# Install dependencies (use yarn - NOT npm)
 yarn install
 
 # Start dev server
 yarn dev
 ```
 
-> ⚠️ Vercel login is required. Contact Karthik or Jan for credentials and access.
+> Vercel login is required. Contact Karthik or Jan for credentials and access.
 
-### Deployment — JDOX Studio
+### Deployment - JDOX Studio
 
 | Branch | Environment |
 |---|---|
@@ -251,39 +214,35 @@ yarn dev
 
 ### JDOX API Architecture
 
-> JDOX Studio uses **multiple separate API repos**, each handling a different part of the app.
+JDOX Studio uses multiple separate API repos, each handling a different part of the app.
 
 ```
 JDOX Studio (Frontend)
-      │
-      ├── JDOX-API          → Main backend logic, S3 upload, user verification routes (Vercel)
-      ├── JDOX-AZURE-API    → Azure routes & logic (AWS Lambda)
-      ├── JDOX-OCI-API      → OCI upload verification
-      ├── Hight-AI / Content API  → AI & content features (separate repo)
-      └── Authenticator-hight    → Auth service used across ALL Hight.io projects
+      |
+      +-- JDOX-API          -> Main backend logic, S3 upload, user verification routes (Vercel)
+      +-- JDOX-AZURE-API    -> Azure routes & logic (AWS Lambda)
+      +-- JDOX-OCI-API      -> OCI upload verification
+      +-- Hight-AI / Content API  -> AI & content features (separate repo)
+      +-- Authenticator-hight    -> Auth service used across ALL Hight.io projects
 ```
 
 #### API Details
 
 | API Repo | Purpose | Hosting |
 | --- | --- | --- |
-| `JDOX-API` | Main backend — S3 upload, user verification, core routes | Vercel (auto-deploy dev + prod) |
+| `JDOX-API` | Main backend - S3 upload, user verification, core routes | Vercel (auto-deploy dev + prod) |
 | `JDOX-AZURE-API` | Azure-specific API routes and logic | AWS Lambda |
 | `JDOX-OCI-API` | OCI upload verification logic | _(confirm hosting)_ |
 | `Hight-AI / Content API` | AI and content features | Separate repo |
-| `Authenticator-hight` | **Authentication across all Hight.io projects** | Separate repo |
+| `Authenticator-hight` | Authentication across all Hight.io projects | Separate repo |
 
-> ⚠️ Each API has its own repo. Make sure you clone and configure env variables for each one you're working on.
+> Each API has its own repo. Clone and configure env variables for each one you work on.
 
 ---
 
 ## JDOX Folder Scanner App
 
-> **What it is:** An Electron desktop app for scanning folders and uploading files. Uses the same JDOX API endpoints with a few additional Folder Scanner-specific routes.
-
-<!-- Screenshot placeholder -->
-> 📷 _Add a Folder Scanner App screenshot here_
-> `![JDOX Folder Scanner](./assets/jdox-folder-scanner.png)`
+An Electron desktop app for scanning folders and uploading files. Uses the same JDOX API endpoints with a few additional Folder Scanner-specific routes.
 
 ### Tech Stack
 
@@ -295,14 +254,14 @@ JDOX Studio (Frontend)
 
 ### Build & Deployment
 
-> The app is compiled into `.exe` installer files using **two company configurations**:
+The app is compiled into `.exe` installer files using two company configurations:
 
 | Build | Used For |
 |---|---|
 | **Hight version** | Internal testing |
 | **Spirax version** | Customer (Spirax is the client) |
 
-> When testing, always use the **Hight version**. Spirax is what gets deployed to the customer.
+When testing, always use the Hight version. Spirax is what gets deployed to the customer.
 
 #### Adding a New Customer Config
 
@@ -323,13 +282,13 @@ Once the build is finalized and tested:
 4. Customers receive auto-updates from this GitHub release
 ```
 
-> The `.yml` file is required for the **auto-update** mechanism to work.
+The `.yml` file is required for the auto-update mechanism to work.
 
 ---
 
 ## JDOX Folder Scanner Service (Windows)
 
-> **What it is:** A Windows background service version of the Folder Scanner — runs via `services.msc` and handles file uploads asynchronously, even across Windows logins and remote sessions.
+A Windows background service version of the Folder Scanner. Runs via `services.msc` and handles file uploads asynchronously, even across Windows logins and remote sessions.
 
 ### Tech Stack
 
@@ -342,16 +301,16 @@ Once the build is finalized and tested:
 
 | Feature | Folder Scanner App | Folder Scanner Service |
 | --- | --- | --- |
-| UI | Electron GUI | No UI — background Windows service |
+| UI | Electron GUI | No UI - background Windows service |
 | Runs when | App is open | Always (runs via `services.msc`) |
-| Remote sessions | Limited | ✅ Works across logins and remote sessions |
+| Remote sessions | Limited | Works across logins and remote sessions |
 | Upload mode | Interactive | Async background |
 
 ### Build & Distribution
 
 ```
 1. Build Node.js service
-2. Compile with InnoSetup → creates installer .exe
+2. Compile with InnoSetup -> creates installer .exe
 3. Distribute installer to customer
 4. Service registers in Windows services (services.msc)
 ```
@@ -360,11 +319,7 @@ Once the build is finalized and tested:
 
 ## Reducr.io
 
-> **What it is:** A Hight.io web product.
-
-<!-- Screenshot placeholder -->
-> 📷 _Add a Reducr.io screenshot here_
-> `![Reducr.io](./assets/reducr.png)`
+A Hight.io web product.
 
 ### Tech Stack
 
@@ -383,17 +338,13 @@ yarn install
 yarn dev
 ```
 
-> ⚠️ Get environment variables from the team before running locally.
+> Get environment variables from the team before running locally.
 
 ---
 
 ## Oratix.io
 
-> **What it is:** A Hight.io web product with AI-powered file extraction capabilities via AWS Bedrock.
-
-<!-- Screenshot placeholder -->
-> 📷 _Add an Oratix.io screenshot here_
-> `![Oratix.io](./assets/oratix.png)`
+A Hight.io web product with AI-powered file extraction via AWS Bedrock.
 
 ### Tech Stack
 
@@ -413,17 +364,13 @@ yarn install
 yarn dev
 ```
 
-> ⚠️ AWS credentials and Bedrock agent config must be set in environment variables. Contact Glen or Karthik.
+> AWS credentials and Bedrock agent config must be set in environment variables. Contact Glen or Karthik.
 
 ---
 
 ## OBOT
 
-> **What it is:** A Hight.io product with the same architecture as Oratix — AWS-deployed Node backend with a Bedrock AI agent.
-
-<!-- Screenshot placeholder -->
-> 📷 _Add an OBOT screenshot here_
-> `![OBOT](./assets/obot.png)`
+A Hight.io product with the same architecture as Oratix. AWS-deployed Node backend with a Bedrock AI agent.
 
 ### Tech Stack
 
@@ -447,23 +394,21 @@ yarn dev
 
 ## Hight Components Library
 
-> **What it is:** An internal UI component library shared across Hight.io projects — contains input elements, buttons, and other reusable UI primitives.
+An internal UI component library shared across Hight.io projects. Contains input elements, buttons, and other reusable UI parts.
 
 ### Usage
 
-> This library is consumed as a dependency in other Hight.io projects. When making changes, updates must be published and projects must update their dependency version.
+This library is used as a dependency in other Hight.io projects. When making changes, updates must be published and projects must update their dependency version.
 
 | Detail | Notes |
 |---|---|
 | Type | UI Component Library |
 | Used By | JDOX Studio, Reducr, Oratix, OBOT, and others |
-| Components | Input elements, buttons, and shared UI primitives |
+| Components | Input elements, buttons, and shared UI parts |
 
 ---
 
----
-
-## Quick Reference — All Projects
+## Quick Reference - All Projects
 
 | Project | Org | Frontend | Backend | DB | Node | Pkg Mgr | Deployment |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -472,15 +417,15 @@ yarn dev
 | Reducr.io | Hight.io | React, Next.js | Node API | TBD | 22 | yarn | TBD |
 | Oratix.io | Hight.io | React, Next.js | Node API + AWS | TBD | 22 | yarn | AWS |
 | OBOT | Hight.io | React, Next.js | Node API + AWS | TBD | 22 | yarn | AWS |
-| Folder Scanner App | Hight.io | Electron | Node (JDOX API) | — | 22 | yarn | GitHub Releases (.exe) |
-| Folder Scanner Service | Hight.io | None (background) | Node Windows Service | — | 22 | yarn | InnoSetup installer |
-| Hight Components | Hight.io | Component Library | — | — | 22 | yarn | npm package |
+| Folder Scanner App | Hight.io | Electron | Node (JDOX API) | - | 22 | yarn | GitHub Releases (.exe) |
+| Folder Scanner Service | Hight.io | None (background) | Node Windows Service | - | 22 | yarn | InnoSetup installer |
+| Hight Components | Hight.io | Component Library | - | - | 22 | yarn | npm package |
 
 ---
 
-## Common Environment Variables Checklist
+## Environment Variables Checklist
 
-> Always get these values from a lead or senior dev before starting locally. **Never commit `.env` files.**
+Get these values from a lead or senior dev before starting locally. Never commit `.env` files.
 
 ### Accqrate HCM
 
@@ -500,27 +445,3 @@ yarn dev
 - [ ] AWS Bedrock agent ID and region
 - [ ] AWS access keys
 - [ ] API endpoint URLs
-
----
-
-## Assets Folder Structure
-
-> Store all screenshots and images in the `./assets/` folder next to this file.
-
-```
-documentation/
-├── index.md           ← This file
-└── assets/
-    ├── accqrate-dashboard.png
-    ├── accqrate-structure.png
-    ├── hight-overview.png
-    ├── jdox-studio.png
-    ├── jdox-folder-scanner.png
-    ├── reducr.png
-    ├── oratix.png
-    └── obot.png
-```
-
----
-
-> **Maintainer note:** This document should be updated whenever team contacts change, new projects are added, or architecture decisions are made. Keep the Quick Reference table and env variable checklist current.
